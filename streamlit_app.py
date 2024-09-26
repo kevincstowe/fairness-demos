@@ -1,6 +1,13 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("Fairness Model Demonstration")
+model = st.radio("Select a model", ["deBERTa", "Base Promt", "Few-Shot", "Self-Correction"])
+
+if model == "deBERTa":
+    st.write("deberta")
+elif model == "Base Prompt":
+    st.write("Base Prompt")
+elif model == "Few-Shot":
+    pass
+elif model == "Self-Correction":
+    pass
